@@ -1,4 +1,4 @@
-import { Component, input, output } from '@angular/core';
+import { Component, computed, input, output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -8,5 +8,8 @@ import { Component, input, output } from '@angular/core';
 })
 export class ButtonComponent {
   variant = input<'primary' | 'outline' | 'link' | 'icon'>('primary');
+  size = input<'md' | 'lg' | 'icon'>('md');
+  buttonStyles = computed(() => this.variant() + ' ' + this.size());
+
   handleClick = output();
 }

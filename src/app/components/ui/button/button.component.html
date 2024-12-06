@@ -1,1 +1,3 @@
-<button [class]="variant()" (click)="handleClick.emit()"><ng-content /></button>
+<button [class]="buttonStyles()" (click)="handleClick.emit()">
+  <ng-content />
+</button>

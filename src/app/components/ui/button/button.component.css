@@ -10,8 +10,6 @@ button {
   border-radius: 8px;
 
   height: 2.5rem;
-  padding: 0.5rem 1rem;
-  margin: 0;
 
   outline-offset: 2px;
   outline-width: 2px;
@@ -76,17 +74,16 @@ button:disabled {
   text-decoration: underline;
 }
 
+.md {
+  padding: 0.5rem 1rem;
+}
+
+.lg {
+  width: 100%;
+}
+
 .icon {
-  height: 2.5rem;
-  padding: 0;
   width: 2.5rem;
 
   vertical-align: bottom;
-
-  background-color: var(--neutral-200);
-  color: var(--neutral-800);
-}
-
-.icon:hover {
-  background-color: var(--neutral-300);
 }
