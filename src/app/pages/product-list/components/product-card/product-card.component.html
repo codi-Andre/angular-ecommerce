@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="img-wrapper">
+    <img height="176" width="176" [src]="product().image" alt="product" />
+  </div>
+
+  <span class="title">{{
+    product().title.length > 45
+      ? product().title.substring(0, 45) + "..."
+      : product().title
+  }}</span>
+
+  <span class="price">{{ product().price.toLocaleString("en-US", {
+    style: "currency",
+    currency: "USD",
+  }) }}</span>
+
+  <app-button size="lg">add to the cart</app-button>
+</div>
